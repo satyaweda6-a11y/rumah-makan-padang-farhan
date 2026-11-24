@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUMAH MAKAN PADANG FARHAN</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #fff8ec;
+        }
+        header {
+            background-color: #b80000;
+            color:white;
+            text-align:center;
+            padding:30px 20px;
+        }
+        header h1 {
+            font-size:32px;
+            margin-bottom:8px;
+        }
+        nav {
+            background-color:#880000;
+            text-align:center;
+            padding:15px;
+        }
+        nav a {
+            color:white;
+            text-decoration:none;
+            margin:0 12px;
+            font-weight:bold;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('');
+            color:white;
+            text-align:center;
+            padding:70px 20px;
+        }
+        .hero h2 {
+            font-size:28px;
+            margin-bottom:15px;
+        }
+        .container {
+            max-width:1100px;
+            margin:40px auto;
+            padding:0 20px;
+        }
+        .section-title {
+            text-align:center;
+            color:#b80000;
+            font-size:26px;
+            margin-bottom:25px;
+        }
+        .menu-grid {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            gap:20px;
+        }
+        .menu-card {
+            background:white;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 4px 10px #00000020;
+        }
+        .menu-card img {
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+        .menu-card-body {
+            padding:18px;
+        }
+        .menu-card-body h3 {
+            color:#b80000;
+            margin-bottom:8px;
+        }
+        .price {
+            font-weight:bold;
+            color:#228B22;
+            font-size:18px;
+            margin:10px 0;
+        }
+        form {
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 4px 10px #00000020;
+        }
+        .form-row {
+            margin-bottom:16px;
+        }
+        label {
+            display:block;
+            margin-bottom:6px;
+            font-weight:bold;
+        }
+        input, select, textarea {
+            width:100%;
+            padding:12px;
+            border:2px solid #ffb366;
+            border-radius:8px;
+            font-size:16px;
+        }
+        button {
+            width:100%;
+            padding:14px;
+            background-color:#b80000;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        footer {
+            background-color:#b80000;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍛 RUMAH MAKAN PADANG FARHAN</h1>
+        <p>Rasa Otentik Masakan Padang yang Lezat & Halal</p>
+    </header>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#menu">MENU MAKANAN</a>
+        <a href="#reservasi">DATA PENGUNJUNG / RESERVASI</a>
+        <a href="#kontak">KONTAK</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>SELAMAT DATANG DI RUMAH MAKAN PADANG FARHAN</h2>
+        <p>Nikmati kelezatan Rendang, Gulai, dan masakan khas Padang dengan harga terjangkau!</p>
+    </section>
+
+    <div class="container">
+        <section id="menu">
+            <h2 class="section-title">🍽️ DAFTAR MENU MAKANAN</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Rendang Sapi">
+                    <div class="menu-card-body">
+                        <h3>Rendang Sapi</h3>
+                        <p>Daging sapi empuk bumbu rendang khas Minang</p>
+                        <div class="price">Rp 35.000</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Gulai Ayam">
+                    <div class="menu-card-body">
+                        <h3>Gulai Ayam</h3>
+                        <p>Ayam bumbu gulai pedas gurih</p>
+                        <div class="price">Rp 28.000</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Nasi Padang Komplit">
+                    <div class="menu-card-body">
+                        <h3>Nasi Padang Komplit</h3>
+                        <p>Nasi + lauk pauk + sambal</p>
+                        <div class="price">Rp 22.000</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45b8" alt="Gulai Ikan">
+                    <div class="menu-card-body">
+                        <h3>Gulai Ikan Patin</h3>
+                        <p>Ikan patin kuah gulai segar</p>
+                        <div class="price">Rp 32.000</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add" alt="Es Teh Manis">
+                    <div class="menu-card-body">
+                        <h3>Es Teh Manis</h3>
+                        <p>Teh manis dingin segar</p>
+                        <div class="price">Rp 5.000</div>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1581349245846-fa8859e82a72" alt="Es Jeruk">
+                    <div class="menu-card-body">
+                        <h3>Es Jeruk</h3>
+                        <p>Jeruk peras segar dingin</p>
+                        <div class="price">Rp 7.000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservasi" style="margin-top:50px;">
+            <h2 class="section-title">📝 FORM DATA PENGUNJUNG / RESERVASI MEJA</h2>
+            <form>
+                <div class="form-row">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-row">
+                    <label>Nomor HP</label>
+                    <input type="tel" placeholder="0812xxxxxxx" required>
+                </div>
+                <div class="form-row">
+                    <label>Tanggal Datang</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-row">
+                    <label>Jam Kedatangan</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-row">
+                    <label>Jumlah Orang</label>
+                    <select required>
+                        <option value="">Pilih Jumlah</option>
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3-4 Orang</option>
+                        <option>5-8 Orang</option>
+                        <option>Lebih dari 8 Orang</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label>Catatan (Contoh: Pesanan, Alergi Makanan)</label>
+                    <textarea rows="4" placeholder="Tulis catatan Anda disini"></textarea>
+                </div>
+                <button type="submit">✅ KIRIM DATA RESERVASI</button>
+            </form>
+        </section>
+
+        <section id="kontak" style="margin-top:50px;">
+            <h2 class="section-title">📍 KONTAK & LOKASI</h2>
+            <div style="text-align:center; background:white; padding:25px; border-radius:12px;">
+                <h3>RUMAH MAKAN PADANG FARHAN</h3>
+                <p>📞 Telp: 0812-XXXX-XXXX</p>
+                <p>⏰ Jam Buka: 09.00 - 21.00 WIB</p>
+                <p>🏠 Alamat: (ISI ALAMAT RUMAH MAKAN)</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 RUMAH MAKAN PADANG FARHAN | Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>
